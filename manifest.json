@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Table Exporter",
+  "version": "1.0",
+  "description": "Scans the current webpage for HTML tables and lets you download them as CSV or Excel.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "assets/icon.png"
+  }
+}

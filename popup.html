@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 320px; padding: 15px; font-family: sans-serif; background: #f9f9f9; }
+    h3 { margin-top: 0; color: #333; border-bottom: 2px solid #4285f4; padding-bottom: 5px; }
+    #results { margin-top: 10px; }
+    .table-card { background: white; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .table-title { font-weight: bold; margin-bottom: 8px; font-size: 14px; color: #555; }
+    .btn-group { display: flex; gap: 8px; }
+    .btn-group button { flex: 1; padding: 8px; font-size: 12px; cursor: pointer; border: none; border-radius: 4px; color: white; font-weight: bold; }
+    .btn-csv { background: #0f9d58; }
+    .btn-csv:hover { background: #0b8043; }
+    .btn-xlsx { background: #1d6f42; }
+    .btn-xlsx:hover { background: #155130; }
+    .loading { font-style: italic; color: #777; }
+    .table-title { 
+        font-weight: bold; 
+        font-size: 14px; 
+        color: #4285f4; 
+        margin-bottom: 2px;
+      }
+      .table-hint { 
+        font-size: 11px; 
+        color: #666; 
+        margin-bottom: 10px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        background: #eee;
+        padding: 2px 5px;
+        border-radius: 2px;
+      }
+  </style>
+</head>
+<body>
+  <h3>Detected Tables</h3>
+  <div id="results"><span class="loading">Scanning page...</span></div>
+
+  <script src="xlsx.full.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
